@@ -10,12 +10,14 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static void AddWindowStateHandler(this PhotinoBlazorApp app)
         {
-            var windowState = LoadWindowState();
+            WindowState windowState = LoadWindowState();
             if (windowState != null)
             {
                 app.MainWindow.SetSize(windowState.Width, windowState.Height);
                 app.MainWindow.SetMaximized(windowState.IsMaximized);
             }
+
+            windowState = new WindowState();
 
             app.MainWindow.RegisterSizeChangedHandler((sender, e) =>
             {
