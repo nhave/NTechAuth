@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTechAuth.API", "NTechAuth.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTechAuth.Models", "NTechAuth.Models\NTechAuth.Models.csproj", "{568CF519-80EE-4DDB-A4BB-0B37BF6AF8EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTechAuth.WebView.Photino", "NTechAuth.WebView.Photino\NTechAuth.WebView.Photino.csproj", "{36019B01-ABB3-47E1-8CD1-EEF08270628A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,14 @@ Global
 		{568CF519-80EE-4DDB-A4BB-0B37BF6AF8EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{568CF519-80EE-4DDB-A4BB-0B37BF6AF8EF}.Release|ARM64.ActiveCfg = Release|Any CPU
 		{568CF519-80EE-4DDB-A4BB-0B37BF6AF8EF}.Release|ARM64.Build.0 = Release|Any CPU
+		{36019B01-ABB3-47E1-8CD1-EEF08270628A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36019B01-ABB3-47E1-8CD1-EEF08270628A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36019B01-ABB3-47E1-8CD1-EEF08270628A}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{36019B01-ABB3-47E1-8CD1-EEF08270628A}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{36019B01-ABB3-47E1-8CD1-EEF08270628A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36019B01-ABB3-47E1-8CD1-EEF08270628A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36019B01-ABB3-47E1-8CD1-EEF08270628A}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{36019B01-ABB3-47E1-8CD1-EEF08270628A}.Release|ARM64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
