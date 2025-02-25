@@ -1,0 +1,6 @@
+@NTechAuth.API_HostAddress = http://localhost:5122
+
+GET {{NTechAuth.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

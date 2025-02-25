@@ -1,0 +1,32 @@
+﻿:root {
+    --bs-btn-active-border-color: transparent;
+}
+
+body {
+    overscroll-behavior: auto;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+.navbar .nav-link, .card-header h1 {
+    font-family: Impact, sans-serif;
+}
+
+.navbar-brand img {
+    -webkit-user-drag: none;
+}
+
+.navbar .btn-group {
+    display: block;
+}
+
+.navbar .dropdown-menu {
+    margin-top: .25rem !important;
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: rgba(255, 255, 255, 0.25);
+}

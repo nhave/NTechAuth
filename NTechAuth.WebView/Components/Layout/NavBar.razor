@@ -1,0 +1,69 @@
+﻿<header>
+    <nav class="navbar navbar-dark fixed-top navbar-expand-sm bg-dark border-bottom shadow">
+        <div class="container">
+            <a class="navbar-brand p-0" href="">
+                <img src="_content/NTechAuth.WebView/images/logo.png" height="40" alt="Logo">
+            </a>
+            <div>
+                <Avatar Class="d-sm-none" Src="_content/NTechAuth.WebView/images/demo_avatar.png" Size="40" />
+                <button class="navbar-toggler" type="button" @onclick="OpenCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <NavbarCollapse @ref="collapse">
+                <div class="navbar-nav me-auto">
+                    <div class="nav-item py-2 py-sm-1 col-12 col-sm-auto">
+                        <hr class="d-sm-none my-0 text-white-50">
+                    </div>
+                    <NavLink class="nav-item nav-link" href="counter">
+                        <Icon Name="IconName.PlusSquareFill" /> Counter
+                    </NavLink>
+                    <NavLink class="nav-item nav-link" href="weather">
+                        <Icon Name="IconName.Table" /> Weather
+                    </NavLink>
+                    <div class="d-sm-none">
+                        <div class="nav-item py-2 py-sm-1 col-12 col-sm-auto">
+                            <hr class="d-sm-none my-0 text-white-50">
+                        </div>
+                        <NavLink class="nav-item nav-link" href="counter">
+                            <Icon Name="IconName.PersonCircle" /> Account
+                        </NavLink>
+                        <NavLink class="nav-item nav-link" href="weather">
+                            <Icon Name="IconName.BoxArrowLeft" /> Sign out
+                        </NavLink>
+                    </div>
+                </div>
+                <div class="navbar-nav">
+                    <Dropdown Class="nav-item py-2 py-sm-0 d-none d-sm-block">
+                        <DropdownToggleButton Class="nav-link p-0 border-0">
+                            <Avatar Src="_content/NTechAuth.WebView/images/demo_avatar.png" Size="40" />
+                        </DropdownToggleButton>
+                        <DropdownMenu Position="DropdownMenuPosition.End">
+                            <DropdownItem To="#" Type="DropdownItemType.Link">Account</DropdownItem>
+                            <DropdownDivider>Dropdown header</DropdownDivider>
+                            <DropdownItem To="#" Type="DropdownItemType.Link">Sign out</DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
+                </div>
+            </NavbarCollapse>
+        </div>
+    </nav>
+</header>
+
+<script>
+    (function() {
+        const navbar = document.querySelector('.navbar');
+        const navbarHeight = navbar.offsetHeight;
+        document.body.style.paddingTop = `${navbarHeight}px`;
+    })();
+</script>
+
+@code {
+    private NavbarCollapse collapse;
+
+    private async Task OpenCollapse()
+    {
+        Console.WriteLine(collapse);
+        await collapse.Open();
+    }
+}
